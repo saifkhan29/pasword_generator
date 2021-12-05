@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,9 +6,9 @@
 
 body {
   background-color: #e1e2e4;
-  background-image: url(https://user-images.githubusercontent.com/79800224/144754905-6ef9cb3b-7b57-4d6d-bfc7-c14649146ab7.png);
+  background-image: url(./bg_icons.png);
   color: #fff;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,8 +32,8 @@ h2 {
   border-radius: 20px;
 }
 
-.inner_container{
-    margin: 20px;
+.inner_container {
+  margin: 20px;
 }
 
 .result-container {
@@ -80,21 +80,17 @@ h2 {
   border-bottom-right-radius: 20px;
 }
 
-.btn:active{
-    transform: scale(0.98);
-    
+.btn:active {
+  transform: scale(0.98);
 }
 
+.btn_cont {
+  overflow: hidden;
+  width: 100%;
+  background-color: #0077b6;
 
-
-.btn_cont{
-    overflow:hidden;
-    width: 100%;
-    background-color: #0077b6;
-
-    border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-
 }
 
 .btn-large {
@@ -107,4 +103,14 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin: 15px 0;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 400px;
+  }
+
+  .btn {
+    padding: 14px 0;
+  }
 }
