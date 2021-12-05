@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e1e2e4;
+  background-image: url(./bg_icons.png);
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.container {
+  background-color: #48cae4;
+  width: 700px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.inner_container{
+    margin: 20px;
+}
+
+.result-container {
+  background-color: #00b4d8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+#result::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: #0077b6;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn:active{
+    transform: scale(0.98);
+    
+}
+
+
+
+.btn_cont{
+    overflow:hidden;
+    width: 100%;
+    background-color: #0077b6;
+
+    border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
